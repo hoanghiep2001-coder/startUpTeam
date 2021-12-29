@@ -1,0 +1,537 @@
+/* PC */
+@media (min-width: 1114px) {
+    .hide-on-pc {
+        display: none;
+    }
+}
+
+/* PC low resolution */
+@media (min-width: 1024px) and (max-width: 1113px) {
+    .hide-on-pc {
+        display: none;
+    }
+    /* grid */
+    .grid.wide {
+        max-width: 1000px;
+    }
+    /* header */
+    .header-navbar-item a {
+        padding: 30.5px 13px;
+    }
+
+    /* header with search */
+    .header-with-search {
+        margin-left: 20px;
+        width: 200px;
+        font-size: 1.4rem;
+    }
+
+    .header-with-search-input {
+        width: 150px;
+    }
+
+    header.sticky .header-navbar-item a {
+        padding: 22.5px 12px;
+    }
+
+    header.sticky .header-with-search {
+        font-size: 1.2rem;
+        width: 200px;
+    }
+
+    header.sticky .header-with-search-input {
+        width: 150px;
+    }
+
+    .header-with-search-icon {
+        padding: 16px 8px;
+    }
+
+    .header-with-search-icon::after {
+        right: 36px;
+    }
+
+    /* slider */
+    .body-remote {
+        right: 19px;
+    }
+
+    /* services */
+    .body-contact-col h3, 
+    .body-instagram-col h3, 
+    .body-wedding-video-col h3, 
+    .body-photo-gallery-heading h3, 
+    .body-services-heading h3,
+    .body-aboutUs-heading h3 {
+        font-size: 3.0rem;
+    }
+
+    .body-services-gallery img {
+        width: 100%;
+    }
+
+    .body-services-gallery h4 {
+        font-size: 2.4rem;
+    }
+
+    /* about Us */
+    .body-aboutUs-img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .aboutUs-product-icon i {
+        font-size: 6.0rem;
+    }
+
+    .aboutUs-product-content h3 {
+        font-size: 3.6rem;
+    }
+
+    /* wedding video */
+    .body-wedding-video-play-col img {
+        width: 900px;
+    }
+
+    .modal-video {
+        z-index: 10000;
+        transition: 0.5s ease-in;
+        animation: videoScrollTablet 0.6s ease-in;
+        margin-bottom: 600px;
+    }
+
+    @keyframes videoScrollTablet {
+        from {
+            opacity: 0;
+            margin-bottom: 0;
+        }
+        to {
+            opacity: 1;
+            margin-bottom: 600px;
+        }
+    }
+
+    /* instagram */
+    .body-instagram-img-col img {
+        object-fit: cover;
+        height: 250px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+
+    /* grid */
+    .grid.wide {
+        max-width: 644px;
+    }
+
+    /* header */
+    .header-container {
+        position: relative;
+    }
+
+    .tablet__header-nav {
+        position: relative;
+    }
+
+
+    .tablet__header-nav-container {
+        cursor: pointer;
+
+    }
+
+    .tablet__header-nav-bar3,
+    .tablet__header-nav-bar2,
+    .tablet__header-nav-bar1 {
+        margin: 5px 0;
+        width: 35px;
+        height: 2px;
+        display: block;
+        position: relative;
+        background-color: #3d3535;
+        transition: all 0.3s ease-out;
+    }
+
+    .change .tablet__header-nav-bar1 {
+        transform: rotate(45deg) translate(5px, 5px);
+        transition: 0.3s all ease-out;
+    }
+
+    .change .tablet__header-nav-bar2 {
+        opacity: 0;
+        transition: 0.2s;
+    }
+
+    .change .tablet__header-nav-bar3 {
+        transform: rotate(135deg) translate(-5px, 5px);
+    }
+
+    /* tablet nav */
+    .tablet__header-nav-list {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 15px 20px 0 rgb(34 34 34 / 15%);
+        padding: 10px 12px;
+        z-index: 10000;
+        display: none;
+        color: #473c3c;
+    }
+
+    .tablet__header-nav-list-ul {
+        font-size: 1.8rem;
+    }
+
+    .tablet__header-nav-list-li {
+        padding: 4px 0 4px 8px;
+        transition: 0.5s all ease-out;
+        font-weight: 600;
+        color: #473c3c;
+    }
+
+    .tablet__header-nav-list-li.active,
+    .tablet__header-nav-list-li:hover {
+        background-color: var(--primary-color);
+        color: #fff;
+    }
+
+    .tablet__header-nav-list.open {
+        display: block;
+        transition: 0.5s all ease-out;
+        animation: scrollNav 0.4s ease-out;
+    }
+
+    @keyframes scrollNav {
+        from {
+            transform: translateY(-50px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    /* services */
+    .body-services-gallery img {
+        width: 100%;
+    }
+
+    .body-services-gallery h4 {
+        font-size: 1.8rem;
+    }
+
+    /* about us */
+    .body-aboutUs-img {
+        width: 100%;
+    }
+
+    .body-aboutUs-heading {
+        margin-top: 45px;
+    }
+
+    .aboutUs-product-icon i {
+        font-size: 6.0rem;
+    }
+
+    .aboutUs-product-content h3 {
+        font-size: 4.0rem;
+    }
+
+    .aboutUs-product-content p {
+        font-size: 1.3rem;
+    }
+
+    /* wedding video */
+    .body-wedding-video-play-col img {
+        width: 644px;
+    }
+
+    .body-wedding-video-play-popup {
+        margin-top: -45px;
+        margin-left: -45px
+    }
+
+    .modal-video {
+        width: 500px;
+        height: 300px;
+        z-index: 10000;
+        transition: 0.6s ease-in;
+        animation: TabletvideoScroll 0.6s ease-in;
+        margin-top: -500px;
+    }
+
+    @keyframes TabletvideoScroll {
+        from {
+            opacity: 0;
+            margin-top: 0;
+        }
+        to {
+            opacity: 1;
+            margin-top: -500px;
+        }
+    }
+
+    /* instagram */
+    .body-instagram-img-row.row {
+        margin-top: 20px;
+    }
+}
+
+/* Moblie */
+@media (max-width:740px) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+    /* grid */
+    .grid.wide {
+        max-width: 367px;
+    }
+    /* header */
+    .header-container {
+        position: relative;
+    }
+
+    .tablet__header-nav {
+        position: relative;
+    }
+
+
+    .tablet__header-nav-container {
+        cursor: pointer;
+
+    }
+
+    .tablet__header-nav-bar3,
+    .tablet__header-nav-bar2,
+    .tablet__header-nav-bar1 {
+        margin: 5px 0;
+        width: 35px;
+        height: 2px;
+        display: block;
+        position: relative;
+        background-color: #3d3535;
+        transition: all 0.3s ease-out;
+    }
+
+    .change .tablet__header-nav-bar1 {
+        transform: rotate(45deg) translate(5px, 5px);
+        transition: 0.3s all ease-out;
+    }
+
+    .change .tablet__header-nav-bar2 {
+        opacity: 0;
+        transition: 0.2s;
+    }
+
+    .change .tablet__header-nav-bar3 {
+        transform: rotate(135deg) translate(-5px, 5px);
+    }
+
+    /* Nav */
+    .tablet__header-nav-list {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 15px 20px 0 rgb(34 34 34 / 15%);
+        padding: 10px 12px;
+        z-index: 10000;
+        display: none;
+        color: #473c3c;
+    }
+
+    .tablet__header-nav-list-ul {
+        font-size: 1.8rem;
+    }
+
+    .tablet__header-nav-list-li {
+        padding: 4px 0 4px 8px;
+        transition: 0.5s all ease-out;
+        font-weight: 600;
+    }
+
+    .tablet__header-nav-list-li.active,
+    .tablet__header-nav-list-li:hover {
+        background-color: var(--primary-color);
+        color: #fff;
+    }
+
+    .tablet__header-nav-list.open {
+        display: block;
+        transition: 0.5s all ease-out;
+        animation: scrollNav 0.4s ease-out;
+    }
+
+    @keyframes scrollNav {
+        from {
+            transform: translateY(-50px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    /* header with search */
+    .mobile-header-with-search {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 8px;
+        font-size: 1.4rem;
+    }
+
+    .mobile-header-with-search-input {
+        height: 25px;
+    }
+
+    .header-with-search-icon {
+        font-size: 1.4rem;
+        padding: 12px 12px;
+    }
+
+    /* slider */
+    .body-slide-show-content-button {
+        padding: 10px 40px;
+        border-radius: 5px;
+    }
+
+    .body-slide-show-content-paragraph {
+        line-height: 24px;
+    }
+
+    /* nut dieu khien */
+    .body-remote {
+        position: absolute;
+        right: 19px;
+        top: 400px;
+        z-index: 2;
+    }
+
+    .body-remote-icon {
+        padding: 10px 6px;
+    }
+
+    .body-slide-show-content-heading {
+        font-size: 2.4rem;
+    }
+
+    .body-contact-col h3,
+    .body-instagram-col h3,
+    .body-wedding-video-col h3,
+    .body-photo-gallery-heading h3,
+    .body-services-heading h3 {
+        color: var(--text-color);
+        font-size: 2.4rem;
+    }
+
+    /* services */
+    .body-services-gallery {
+        margin-top: 30px;
+    }
+
+    .body-services-gallery h4 {
+        font-size: 2.0rem;
+    }
+
+    /* about us */
+    .body-aboutUs-img {
+        width: 100%;
+    }
+
+    .body-aboutUs-heading {
+        margin-top: 40px;
+    }
+
+    .body-aboutUs-heading h3 {
+        font-size: 2.0rem;
+    }
+
+    .body-aboutUs-social-icon {
+        padding: 10px;
+    }
+
+    .aboutUs-product-icon i {
+        font-size: 6.0rem;
+    }
+
+    .aboutUs-product-content h3 {
+        font-size: 2.4rem;
+    }
+
+    /* wedding video */
+    .body-wedding-video-play-col img {
+        width: 367px;
+    }
+
+    .body-wedding-video-play-popup {
+        top: 50%;
+        left: 50%;
+        width: 60px;
+        height: 60px;
+        font-size: 3.0rem;
+        line-height: 68px;
+        margin-left: -30px;
+        margin-top: -30px;
+    }
+
+    .modal-video {
+        width: 367px;
+        height: 400px;
+        z-index: 10000;
+        transition: 0.6s ease-in;
+        animation: MobilevideoScroll 0.6s ease-in;
+        margin-top: -70px;
+    }
+
+    @keyframes MobilevideoScroll {
+        from {
+            opacity: 0;
+            margin-top: 0;
+        }
+        to {
+            opacity: 1;
+            margin-top: -70px;
+        }
+    }
+
+    /* instgram */
+    .body-instagram-img-col.col.l-3.m-3.c-6 {
+        margin: 4px 0;
+    }
+
+    /* footer */
+    .footer-heading {
+        padding: 120px 0 80px 0;
+    }
+
+    .footer-heading-content p {
+        font-size: 2.0rem;
+    }
+
+    a.footer-heading-navbar-item {
+        line-height: 40px;
+    }
+
+    .footer-heading-navbar-item {
+        margin: 8px 14px;
+    }
+
+    .footer-ending-flex {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .footer-ending-finish {
+        margin-top: 24px;
+    }
+}

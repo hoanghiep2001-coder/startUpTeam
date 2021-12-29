@@ -1,0 +1,14 @@
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}
+
+/* Moblie */
+@media (max-width:740px) {
+    .app-form-container {
+       min-width: 300px;
+    }
+    audio {
+        width: 100%;
+    }
+}

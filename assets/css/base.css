@@ -1,0 +1,88 @@
+* {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: inherit;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --primary-color: #ff6464;
+    --text-color: #473C3C;
+    --text-hover-color: #fff;
+    --p-color: #7E6F6F;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(167, 165, 165);
+    border-radius: 16px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(94, 92, 92);
+}
+
+@keyframes videoPopup {
+    0%,
+    35% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 1;
+    }
+    50% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+}
+
+
+/* modal */
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    animation: fadeIn linear 0.1s;
+    display: none;
+    z-index: 9999;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal__body {
+    margin: auto;
+    position: relative;
+    z-index: 10000;
+    border-radius: 8px;
+    text-align: center;
+}

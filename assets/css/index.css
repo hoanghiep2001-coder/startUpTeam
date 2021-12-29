@@ -1,0 +1,162 @@
+html {
+    font-family: Roboto;
+}
+
+.app {
+    background: url(../images/worlds-2020-header-take-over.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.app-container {
+    padding: 30px;
+}
+
+.app-logo img {
+    min-width: 180px;
+    fill: yellow;
+}
+
+.app-form {
+    display: flex;
+    justify-content: start;
+    padding-top: 30px;
+}
+
+.app-form-container {
+    padding: 50px 30px 20px;
+    background-color: #f9f9f9;
+    min-width: 375px;
+    animation: showSign 1.3s linear;
+}
+
+@keyframes showSign {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    } to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.app-form-container h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+    color: #111;
+}
+
+.app-form-fillvalue {
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #ececec;
+    margin-top: 10px;
+    padding: 14px 20px;
+    border-radius: 4px;
+}
+
+.app-form-fillvalue::placeholder {
+    font-size: 1.0rem;
+    font-weight: bold;
+    color: rgb(105, 105, 105);
+}
+
+.app-form-link {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 14px;
+}
+
+.app-form-button {
+    padding: 6px 36px;
+    font-size: 2.0rem;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.app-form-button:first-child {
+    background-color: #1877f2;
+    color: #fff;
+}
+
+.app-form-button:first-child:hover {
+    background-color: #0352b9;
+}
+
+.app-form-button:last-child {
+    color: #fff;
+    background-color: #111;
+}
+
+.app-form-button:nth-child(2) {
+    background-color: #fff;
+    border: 2px solid rgba(0,0,0,0.05);
+}
+
+.app-form-remember-me {
+    background-color: #111;
+    outline: none;
+    border: none;
+    width: 15px;
+    height: 15px;
+}
+
+.app-form-checkbox span {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-left: 6px;
+}
+
+.app-form-submit {
+    text-align: center;
+}
+
+.app-form-submit-button.open {
+    background-color: #1877f2;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.app-form-submit-button {
+    padding: 20px 22px;
+    border-radius: 20px;
+    border: 2px solid rgb(226, 226, 226);
+    background-color: #fff;
+    color: rgb(226, 226, 226);
+    font-size: 2.0rem;
+    cursor: pointer;
+    margin: 20px 0 30px 0;
+    display: inline-block;
+}
+
+.app-form-text {
+    text-align: center;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+    color: #666;
+    cursor: pointer;
+}
+
+.app-form-text h3 {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    color: #666;
+}
+
+.app-form-text p {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.app-footer {
+    padding: 60px 20px 20px;
+    background: linear-gradient(360deg, rgba(3,57,66,0.5) 0%, rgba(3,57,66,0) 100%);
+    color: rgb(155, 155, 155);
+}

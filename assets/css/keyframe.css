@@ -1,0 +1,155 @@
+.body-services-heading {
+    opacity: 0;
+}
+
+.body-instagram-row.animated-ToLeft,
+.body-aboutUs-col.animated-ToLeft,
+.body-services-heading.animated-ToLeft {
+    animation: animated-Toleft 1.2s ease-in-out;
+    opacity: 1;
+}
+
+@keyframes animated-Toleft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0.2;
+    } to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.row.data-body-services-row {
+    opacity: 0;
+}
+
+.row.animated-Up {
+    animation: animated-Up 1s linear;
+    opacity: 1;
+}
+
+@keyframes animated-Up {
+    from {
+        opacity: 0.2;
+        transform: translateY(100px);
+    } to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* team info */
+.promotions-col.animated-Left {
+    opacity: 1;
+    animation: animated-Left 1s ease-out;
+}
+.promotions-col.animated-Right {
+    opacity: 1;
+    animation: animated-Right 1s ease-out;
+}
+.promotions-col.animated-Down {
+    opacity: 1;
+    animation: animated-Down 1s ease-out;
+}
+.promotions-col.animated-Up {
+    opacity: 1;
+    animation: animated-Up 1s ease-out;
+}
+
+@keyframes animated-Left {
+    from {
+        opacity: 0.1;
+        transform: translateX(-100px);
+    } to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes animated-Right {
+    from {
+        opacity: 0.1;
+        transform: translateX(100px);
+    } to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes animated-Up {
+    from {
+        opacity: 0.1;
+        transform: translateY(100px);
+    } to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes animated-Down {
+    from {
+        opacity: 0.1;
+        transform: translateY(-100px);
+    } to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/* end team */
+.promotions-col,
+.body-wedding-video-row {
+    opacity: 0;
+}
+
+.body-aboutUs-col.animated-ToRight,
+.body-wedding-video-row.animated-ToRight {
+    opacity: 1;
+    animation: animated-ToRight 1s ease-out;
+}
+
+@keyframes animated-ToRight {
+    from {
+        opacity: 0.1;
+        transform: translateX(100%);
+    } to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* insta */
+.body-instagram-img-col {
+    opacity: 0;
+}
+
+.body-instagram-img-col.animated-ToUp {
+    opacity: 1;
+    animation: animated-ToUp 1s ease-out ;
+}
+
+@keyframes animated-ToUp {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    } to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.body-instagram-img-col.animated-ToDown {
+    opacity: 1;
+    animation: animated-ToDown 1s ease-out;
+}
+
+@keyframes animated-ToDown {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    } to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.body-instagram-row,
+.body-aboutUs-col {
+    opacity: 0;
+}
